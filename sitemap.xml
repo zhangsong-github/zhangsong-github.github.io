@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>https://zhangsong.site/tags/index.html</loc>
-    
-    <lastmod>2020-09-27T09:44:38.665Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhangsong.site/top/index.html</loc>
     
     <lastmod>2020-09-27T09:44:38.665Z</lastmod>
@@ -23,14 +16,14 @@
   </url>
   
   <url>
-    <loc>https://zhangsong.site/categories/index.html</loc>
+    <loc>https://zhangsong.site/tags/index.html</loc>
     
-    <lastmod>2020-09-27T09:44:38.664Z</lastmod>
+    <lastmod>2020-09-27T09:44:38.665Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhangsong.site/about/index.html</loc>
+    <loc>https://zhangsong.site/jsGarbageCollection.html</loc>
     
     <lastmod>2020-09-27T09:44:38.664Z</lastmod>
     
@@ -44,35 +37,21 @@
   </url>
   
   <url>
-    <loc>https://zhangsong.site/jsGarbageCollection.html</loc>
+    <loc>https://zhangsong.site/about/index.html</loc>
     
     <lastmod>2020-09-27T09:44:38.664Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhangsong.site/js-setTimeout.html</loc>
+    <loc>https://zhangsong.site/categories/index.html</loc>
     
-    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    <lastmod>2020-09-27T09:44:38.664Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zhangsong.site/es6-Class.html</loc>
-    
-    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangsong.site/crossOrigin.html</loc>
-    
-    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangsong.site/js-native-bind.html</loc>
     
     <lastmod>2020-09-27T09:44:38.663Z</lastmod>
     
@@ -93,7 +72,28 @@
   </url>
   
   <url>
-    <loc>https://zhangsong.site/ES6-Iterator.html</loc>
+    <loc>https://zhangsong.site/crossOrigin.html</loc>
+    
+    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhangsong.site/js-setTimeout.html</loc>
+    
+    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhangsong.site/js-native-bind.html</loc>
+    
+    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhangsong.site/ES6BlockScope.html</loc>
     
     <lastmod>2020-09-27T09:44:38.662Z</lastmod>
     
@@ -107,7 +107,21 @@
   </url>
   
   <url>
-    <loc>https://zhangsong.site/ES6BlockScope.html</loc>
+    <loc>https://zhangsong.site/ES6-Modules.html</loc>
+    
+    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhangsong.site/ES6-Object.html</loc>
+    
+    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhangsong.site/ES6-Iterator.html</loc>
     
     <lastmod>2020-09-27T09:44:38.662Z</lastmod>
     
@@ -122,20 +136,6 @@
   
   <url>
     <loc>https://zhangsong.site/ES6-Symbol.html</loc>
-    
-    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangsong.site/ES6-Object.html</loc>
-    
-    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangsong.site/ES6-Modules.html</loc>
     
     <lastmod>2020-09-27T09:44:38.662Z</lastmod>
     

@@ -22,25 +22,6 @@
     
     
     
-    
-    
-  <url>
-    <loc>https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html</loc>
-    <lastmod>2020-09-27T09:44:38.664Z</lastmod>
-    <data>
-        <display>
-        <title>shell 脚本编程之变量篇</title>
-        <pubTime>2018-01-30T03:18:20.000Z</pubTime>
-        
-        <tag>脚本编程 shell bash</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>https://zhangsong.site/jsGarbageCollection.html</loc>
     <lastmod>2020-09-27T09:44:38.664Z</lastmod>
@@ -62,14 +43,14 @@
 
     
   <url>
-    <loc>https://zhangsong.site/js-setTimeout.html</loc>
-    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    <loc>https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html</loc>
+    <lastmod>2020-09-27T09:44:38.664Z</lastmod>
     <data>
         <display>
-        <title>理解定时器setTimeout</title>
-        <pubTime>2018-03-07T09:34:52.000Z</pubTime>
+        <title>shell 脚本编程之变量篇</title>
+        <pubTime>2018-01-30T03:18:20.000Z</pubTime>
         
-        <tag>js</tag>
+        <tag>脚本编程 shell bash</tag>
          
          
            
@@ -77,6 +58,8 @@
     </data>
     </url>
 
+    
+    
     
   <url>
     <loc>https://zhangsong.site/es6-Class.html</loc>
@@ -92,46 +75,6 @@
            
              
               <breadCrumb title="es6" url="https://zhangsong.site/categories/es6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhangsong.site/crossOrigin.html</loc>
-    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx 反向代理解决跨域问题</title>
-        <pubTime>2017-02-28T07:28:42.000Z</pubTime>
-        
-        <tag>cross-origin</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题集散地" url="https://zhangsong.site/categories/%E9%97%AE%E9%A2%98%E9%9B%86%E6%95%A3%E5%9C%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhangsong.site/js-native-bind.html</loc>
-    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
-    <data>
-        <display>
-        <title>bind 方法的 Native JavaScript 实现</title>
-        <pubTime>2018-03-15T09:29:02.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://zhangsong.site/categories/javascript/"/>
           
         </display>
     </data>
@@ -179,19 +122,76 @@
 
     
   <url>
-    <loc>https://zhangsong.site/ES6-Iterator.html</loc>
-    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
+    <loc>https://zhangsong.site/crossOrigin.html</loc>
+    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
     <data>
         <display>
-        <title>ES6 笔记之 Iterator</title>
-        <pubTime>2018-03-05T08:56:39.000Z</pubTime>
+        <title>Nginx 反向代理解决跨域问题</title>
+        <pubTime>2017-02-28T07:28:42.000Z</pubTime>
         
-        <tag>es6</tag>
+        <tag>cross-origin</tag>
          
          
            
              
-              <breadCrumb title="es6" url="https://zhangsong.site/categories/es6/"/>
+              <breadCrumb title="问题集散地" url="https://zhangsong.site/categories/%E9%97%AE%E9%A2%98%E9%9B%86%E6%95%A3%E5%9C%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhangsong.site/js-setTimeout.html</loc>
+    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    <data>
+        <display>
+        <title>理解定时器setTimeout</title>
+        <pubTime>2018-03-07T09:34:52.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhangsong.site/js-native-bind.html</loc>
+    <lastmod>2020-09-27T09:44:38.663Z</lastmod>
+    <data>
+        <display>
+        <title>bind 方法的 Native JavaScript 实现</title>
+        <pubTime>2018-03-15T09:29:02.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://zhangsong.site/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhangsong.site/ES6BlockScope.html</loc>
+    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
+    <data>
+        <display>
+        <title>深入理解 ES6 之 Block Scope</title>
+        <pubTime>2018-02-09T07:23:45.000Z</pubTime>
+        
+        <tag>es6 javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://zhangsong.site/categories/javascript/"/>
           
         </display>
     </data>
@@ -219,19 +219,59 @@
 
     
   <url>
-    <loc>https://zhangsong.site/ES6BlockScope.html</loc>
+    <loc>https://zhangsong.site/ES6-Modules.html</loc>
     <lastmod>2020-09-27T09:44:38.662Z</lastmod>
     <data>
         <display>
-        <title>深入理解 ES6 之 Block Scope</title>
-        <pubTime>2018-02-09T07:23:45.000Z</pubTime>
+        <title>ES6 笔记之用模块封装代码</title>
+        <pubTime>2018-03-06T07:28:42.000Z</pubTime>
         
-        <tag>es6 javascript</tag>
+        <tag>es6</tag>
          
          
            
              
-              <breadCrumb title="javascript" url="https://zhangsong.site/categories/javascript/"/>
+              <breadCrumb title="js es6" url="https://zhangsong.site/categories/js-es6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhangsong.site/ES6-Object.html</loc>
+    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 笔记之 Object</title>
+        <pubTime>2018-02-28T02:32:16.000Z</pubTime>
+        
+        <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="es6" url="https://zhangsong.site/categories/es6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhangsong.site/ES6-Iterator.html</loc>
+    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 笔记之 Iterator</title>
+        <pubTime>2018-03-05T08:56:39.000Z</pubTime>
+        
+        <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="es6" url="https://zhangsong.site/categories/es6/"/>
           
         </display>
     </data>
@@ -272,46 +312,6 @@
            
              
               <breadCrumb title="es6" url="https://zhangsong.site/categories/es6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhangsong.site/ES6-Object.html</loc>
-    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
-    <data>
-        <display>
-        <title>ES6 笔记之 Object</title>
-        <pubTime>2018-02-28T02:32:16.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="es6" url="https://zhangsong.site/categories/es6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhangsong.site/ES6-Modules.html</loc>
-    <lastmod>2020-09-27T09:44:38.662Z</lastmod>
-    <data>
-        <display>
-        <title>ES6 笔记之用模块封装代码</title>
-        <pubTime>2018-03-06T07:28:42.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="js es6" url="https://zhangsong.site/categories/js-es6/"/>
           
         </display>
     </data>
