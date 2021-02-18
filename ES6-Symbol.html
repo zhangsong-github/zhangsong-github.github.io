@@ -9,7 +9,7 @@
     <meta name="description" content="符号最初被用设计用于创建对象的私有成员。在此之前，将字符串作为属性名称 导致属性名称可以轻易访问而无视命名规则。而私有名称意味着开发者可以创建非字符串类型的属性名称。由此可以防止常规手段来探查这些名称。  创建符号值 符号没有字面量形式，这在 JS 中是独一无二（很有牌面）的。我们可以使用全局函数 Symbol ()来创建一个符号值。  1234let firstName &#x3D; Symbol();">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6 笔记之 Symbol">
-<meta property="og:url" content="https://zhangsong.site/ES6-Symbol.html">
+<meta property="og:url" content="http://yoursite.com/ES6-Symbol.html">
 <meta property="og:site_name" content="Jason Zhang">
 <meta property="og:description" content="符号最初被用设计用于创建对象的私有成员。在此之前，将字符串作为属性名称 导致属性名称可以轻易访问而无视命名规则。而私有名称意味着开发者可以创建非字符串类型的属性名称。由此可以防止常规手段来探查这些名称。  创建符号值 符号没有字面量形式，这在 JS 中是独一无二（很有牌面）的。我们可以使用全局函数 Symbol ()来创建一个符号值。  1234let firstName &#x3D; Symbol();">
 <meta property="og:locale" content="zh_CN">
@@ -95,17 +95,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/ES6-Symbol.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/ES6-Symbol.html&text=ES6 笔记之 Symbol"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/ES6-Symbol.html&is_video=false&description=ES6 笔记之 Symbol"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=ES6 笔记之 Symbol&body=Check out this article: https://zhangsong.site/ES6-Symbol.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/ES6-Symbol.html&name=ES6 笔记之 Symbol&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/ES6-Symbol.html&t=ES6 笔记之 Symbol"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/ES6-Symbol.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/ES6-Symbol.html&text=ES6 笔记之 Symbol"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/ES6-Symbol.html&is_video=false&description=ES6 笔记之 Symbol"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ES6 笔记之 Symbol&body=Check out this article: http://yoursite.com/ES6-Symbol.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/ES6-Symbol.html&name=ES6 笔记之 Symbol&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/ES6-Symbol.html&t=ES6 笔记之 Symbol"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -207,17 +207,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/ES6-Symbol.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/ES6-Symbol.html&text=ES6 笔记之 Symbol"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/ES6-Symbol.html&is_video=false&description=ES6 笔记之 Symbol"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=ES6 笔记之 Symbol&body=Check out this article: https://zhangsong.site/ES6-Symbol.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/ES6-Symbol.html&name=ES6 笔记之 Symbol&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/ES6-Symbol.html&t=ES6 笔记之 Symbol"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/ES6-Symbol.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/ES6-Symbol.html&text=ES6 笔记之 Symbol"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/ES6-Symbol.html&is_video=false&description=ES6 笔记之 Symbol"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ES6 笔记之 Symbol&body=Check out this article: http://yoursite.com/ES6-Symbol.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/ES6-Symbol.html&title=ES6 笔记之 Symbol"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/ES6-Symbol.html&name=ES6 笔记之 Symbol&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/ES6-Symbol.html&t=ES6 笔记之 Symbol"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>

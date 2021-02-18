@@ -9,7 +9,7 @@
     <meta name="description" content="最近code review 的时候发现了 DOM 对象循环引用的问题， 大家又扯了一下一下浏览器的内存泄露相关，这里记录一下。 JavaScript 的垃圾回收机制JavaScript 是有自动垃圾回收机制，执行环境会管理代码执行过程中使用的内存。这个机制的原理也很简单，找出不再继续使用的变量，然后将其占用的内存释放。而垃圾收集器会按照固定的时间间隔周期性地执行此操作。 局部变量的生命周期。函数执">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript的垃圾收集机制和内存泄露">
-<meta property="og:url" content="https://zhangsong.site/jsGarbageCollection.html">
+<meta property="og:url" content="http://yoursite.com/jsGarbageCollection.html">
 <meta property="og:site_name" content="Jason Zhang">
 <meta property="og:description" content="最近code review 的时候发现了 DOM 对象循环引用的问题， 大家又扯了一下一下浏览器的内存泄露相关，这里记录一下。 JavaScript 的垃圾回收机制JavaScript 是有自动垃圾回收机制，执行环境会管理代码执行过程中使用的内存。这个机制的原理也很简单，找出不再继续使用的变量，然后将其占用的内存释放。而垃圾收集器会按照固定的时间间隔周期性地执行此操作。 局部变量的生命周期。函数执">
 <meta property="og:locale" content="zh_CN">
@@ -93,19 +93,19 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/jsGarbageCollection.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/jsGarbageCollection.html&text=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/jsGarbageCollection.html&is_video=false&description=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=JavaScript的垃圾收集机制和内存泄露&body=Check out this article: https://zhangsong.site/jsGarbageCollection.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/jsGarbageCollection.html&name=JavaScript的垃圾收集机制和内存泄露&description=&lt;p&gt;最近code review 的时候发现了 DOM 对象循环引用的问题， 大家又扯了一下一下浏览器的内存泄露相关，这里记录一下。&lt;/p&gt;
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/jsGarbageCollection.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/jsGarbageCollection.html&text=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/jsGarbageCollection.html&is_video=false&description=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=JavaScript的垃圾收集机制和内存泄露&body=Check out this article: http://yoursite.com/jsGarbageCollection.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/jsGarbageCollection.html&name=JavaScript的垃圾收集机制和内存泄露&description=&lt;p&gt;最近code review 的时候发现了 DOM 对象循环引用的问题， 大家又扯了一下一下浏览器的内存泄露相关，这里记录一下。&lt;/p&gt;
 &lt;h2 id=&#34;JavaScript-的垃圾回收机制&#34;&gt;&lt;a href=&#34;#JavaScript-的垃圾回收机制&#34; class=&#34;headerlink&#34; title=&#34;JavaScript 的垃圾回收机制&#34;&gt;&lt;/a&gt;JavaScript 的垃圾回收机制&lt;/h2&gt;&lt;p&gt;JavaScript 是有自动垃圾回收机制，执行环境会管理代码执行过程中使用的内存。这个机制的原理也很简单，找出不再继续使用的变量，然后将其占用的内存释放。而垃圾收集器会按照固定的时间间隔周期性地执行此操作。&lt;/p&gt;
 &lt;p&gt;局部变量的生命周期。函数执行会初始化内部的局部变量，并在堆或栈内存上为其分配空间用来存值。然后变量被使用，最后函数执行结束，局部变量完成kpi，打卡下班。所以被回收的理应是那些完成KPI的局部变量，没完成的还得继续加班，坐不上 ’垃圾回收器‘ 号班车回家。关于标记无用变量的策略，一般在浏览器的实现中有以下两种。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/jsGarbageCollection.html&t=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/jsGarbageCollection.html&t=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -211,19 +211,19 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/jsGarbageCollection.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/jsGarbageCollection.html&text=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/jsGarbageCollection.html&is_video=false&description=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=JavaScript的垃圾收集机制和内存泄露&body=Check out this article: https://zhangsong.site/jsGarbageCollection.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/jsGarbageCollection.html&name=JavaScript的垃圾收集机制和内存泄露&description=&lt;p&gt;最近code review 的时候发现了 DOM 对象循环引用的问题， 大家又扯了一下一下浏览器的内存泄露相关，这里记录一下。&lt;/p&gt;
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/jsGarbageCollection.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/jsGarbageCollection.html&text=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/jsGarbageCollection.html&is_video=false&description=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=JavaScript的垃圾收集机制和内存泄露&body=Check out this article: http://yoursite.com/jsGarbageCollection.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/jsGarbageCollection.html&title=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/jsGarbageCollection.html&name=JavaScript的垃圾收集机制和内存泄露&description=&lt;p&gt;最近code review 的时候发现了 DOM 对象循环引用的问题， 大家又扯了一下一下浏览器的内存泄露相关，这里记录一下。&lt;/p&gt;
 &lt;h2 id=&#34;JavaScript-的垃圾回收机制&#34;&gt;&lt;a href=&#34;#JavaScript-的垃圾回收机制&#34; class=&#34;headerlink&#34; title=&#34;JavaScript 的垃圾回收机制&#34;&gt;&lt;/a&gt;JavaScript 的垃圾回收机制&lt;/h2&gt;&lt;p&gt;JavaScript 是有自动垃圾回收机制，执行环境会管理代码执行过程中使用的内存。这个机制的原理也很简单，找出不再继续使用的变量，然后将其占用的内存释放。而垃圾收集器会按照固定的时间间隔周期性地执行此操作。&lt;/p&gt;
 &lt;p&gt;局部变量的生命周期。函数执行会初始化内部的局部变量，并在堆或栈内存上为其分配空间用来存值。然后变量被使用，最后函数执行结束，局部变量完成kpi，打卡下班。所以被回收的理应是那些完成KPI的局部变量，没完成的还得继续加班，坐不上 ’垃圾回收器‘ 号班车回家。关于标记无用变量的策略，一般在浏览器的实现中有以下两种。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/jsGarbageCollection.html&t=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/jsGarbageCollection.html&t=JavaScript的垃圾收集机制和内存泄露"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>

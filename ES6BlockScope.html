@@ -9,7 +9,7 @@
     <meta name="description" content="深入理解 ES6 笔记之 Block ScopeJS 存在 变量提升，这个的设计其实是低劣的，或者是语言实现时的一个副作用。它允许变量不声明就可以访问，或声明在后使用在前。新手对于此则很迷惑，甚至许多使用JS多年老手也比较迷惑。但在 ES6 加入 let&#x2F;const 后，变量Hoisting 就不存在了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深入理解 ES6 之 Block Scope">
-<meta property="og:url" content="https://zhangsong.site/ES6BlockScope.html">
+<meta property="og:url" content="http://yoursite.com/ES6BlockScope.html">
 <meta property="og:site_name" content="Jason Zhang">
 <meta property="og:description" content="深入理解 ES6 笔记之 Block ScopeJS 存在 变量提升，这个的设计其实是低劣的，或者是语言实现时的一个副作用。它允许变量不声明就可以访问，或声明在后使用在前。新手对于此则很迷惑，甚至许多使用JS多年老手也比较迷惑。但在 ES6 加入 let&#x2F;const 后，变量Hoisting 就不存在了。">
 <meta property="og:locale" content="zh_CN">
@@ -95,17 +95,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/ES6BlockScope.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/ES6BlockScope.html&text=深入理解 ES6 之 Block Scope"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/ES6BlockScope.html&is_video=false&description=深入理解 ES6 之 Block Scope"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=深入理解 ES6 之 Block Scope&body=Check out this article: https://zhangsong.site/ES6BlockScope.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/ES6BlockScope.html&name=深入理解 ES6 之 Block Scope&description=&lt;h2 id=&#34;深入理解-ES6-笔记之-Block-Scope&#34;&gt;&lt;a href=&#34;#深入理解-ES6-笔记之-Block-Scope&#34; class=&#34;headerlink&#34; title=&#34;深入理解 ES6 笔记之 Block Scope&#34;&gt;&lt;/a&gt;深入理解 ES6 笔记之 Block Scope&lt;/h2&gt;&lt;p&gt;JS 存在 &lt;a href=&#34;&amp;#39;https://developer.mozilla.org/en-US/docs/Glossary/Hoisting&amp;#39;&#34;&gt;变量提升&lt;/a&gt;，这个的设计其实是低劣的，或者是语言实现时的一个副作用。它允许变量不声明就可以访问，或声明在后使用在前。新手对于此则很迷惑，甚至许多使用JS多年老手也比较迷惑。但在 ES6 加入 let/const 后，变量Hoisting 就不存在了。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/ES6BlockScope.html&t=深入理解 ES6 之 Block Scope"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/ES6BlockScope.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/ES6BlockScope.html&text=深入理解 ES6 之 Block Scope"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/ES6BlockScope.html&is_video=false&description=深入理解 ES6 之 Block Scope"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=深入理解 ES6 之 Block Scope&body=Check out this article: http://yoursite.com/ES6BlockScope.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/ES6BlockScope.html&name=深入理解 ES6 之 Block Scope&description=&lt;h2 id=&#34;深入理解-ES6-笔记之-Block-Scope&#34;&gt;&lt;a href=&#34;#深入理解-ES6-笔记之-Block-Scope&#34; class=&#34;headerlink&#34; title=&#34;深入理解 ES6 笔记之 Block Scope&#34;&gt;&lt;/a&gt;深入理解 ES6 笔记之 Block Scope&lt;/h2&gt;&lt;p&gt;JS 存在 &lt;a href=&#34;&amp;#39;https://developer.mozilla.org/en-US/docs/Glossary/Hoisting&amp;#39;&#34;&gt;变量提升&lt;/a&gt;，这个的设计其实是低劣的，或者是语言实现时的一个副作用。它允许变量不声明就可以访问，或声明在后使用在前。新手对于此则很迷惑，甚至许多使用JS多年老手也比较迷惑。但在 ES6 加入 let/const 后，变量Hoisting 就不存在了。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/ES6BlockScope.html&t=深入理解 ES6 之 Block Scope"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -217,17 +217,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/ES6BlockScope.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/ES6BlockScope.html&text=深入理解 ES6 之 Block Scope"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/ES6BlockScope.html&is_video=false&description=深入理解 ES6 之 Block Scope"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=深入理解 ES6 之 Block Scope&body=Check out this article: https://zhangsong.site/ES6BlockScope.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/ES6BlockScope.html&name=深入理解 ES6 之 Block Scope&description=&lt;h2 id=&#34;深入理解-ES6-笔记之-Block-Scope&#34;&gt;&lt;a href=&#34;#深入理解-ES6-笔记之-Block-Scope&#34; class=&#34;headerlink&#34; title=&#34;深入理解 ES6 笔记之 Block Scope&#34;&gt;&lt;/a&gt;深入理解 ES6 笔记之 Block Scope&lt;/h2&gt;&lt;p&gt;JS 存在 &lt;a href=&#34;&amp;#39;https://developer.mozilla.org/en-US/docs/Glossary/Hoisting&amp;#39;&#34;&gt;变量提升&lt;/a&gt;，这个的设计其实是低劣的，或者是语言实现时的一个副作用。它允许变量不声明就可以访问，或声明在后使用在前。新手对于此则很迷惑，甚至许多使用JS多年老手也比较迷惑。但在 ES6 加入 let/const 后，变量Hoisting 就不存在了。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/ES6BlockScope.html&t=深入理解 ES6 之 Block Scope"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/ES6BlockScope.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/ES6BlockScope.html&text=深入理解 ES6 之 Block Scope"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/ES6BlockScope.html&is_video=false&description=深入理解 ES6 之 Block Scope"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=深入理解 ES6 之 Block Scope&body=Check out this article: http://yoursite.com/ES6BlockScope.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/ES6BlockScope.html&title=深入理解 ES6 之 Block Scope"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/ES6BlockScope.html&name=深入理解 ES6 之 Block Scope&description=&lt;h2 id=&#34;深入理解-ES6-笔记之-Block-Scope&#34;&gt;&lt;a href=&#34;#深入理解-ES6-笔记之-Block-Scope&#34; class=&#34;headerlink&#34; title=&#34;深入理解 ES6 笔记之 Block Scope&#34;&gt;&lt;/a&gt;深入理解 ES6 笔记之 Block Scope&lt;/h2&gt;&lt;p&gt;JS 存在 &lt;a href=&#34;&amp;#39;https://developer.mozilla.org/en-US/docs/Glossary/Hoisting&amp;#39;&#34;&gt;变量提升&lt;/a&gt;，这个的设计其实是低劣的，或者是语言实现时的一个副作用。它允许变量不声明就可以访问，或声明在后使用在前。新手对于此则很迷惑，甚至许多使用JS多年老手也比较迷惑。但在 ES6 加入 let/const 后，变量Hoisting 就不存在了。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/ES6BlockScope.html&t=深入理解 ES6 之 Block Scope"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>

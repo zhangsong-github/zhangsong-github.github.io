@@ -9,7 +9,7 @@
     <meta name="description" content="打印&#x2F;输入&#x2F;输出 echo： 是Shell的一个内部指令，用于在屏幕上打印出指定的字符串。 123echo arg echo -e arg #执行arg里的转义字符。echo加了-e默认会换行echo arg &gt; myfile #显示结果重定向至文件，会生成myfile文件 注意，echo后单引号和双引号作用是不同的。单引号不能转义里面的字符。双引号可有可无，单引号主要用在原样输出中。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="shell 脚本编程之变量篇">
-<meta property="og:url" content="https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html">
+<meta property="og:url" content="http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html">
 <meta property="og:site_name" content="Jason Zhang">
 <meta property="og:description" content="打印&#x2F;输入&#x2F;输出 echo： 是Shell的一个内部指令，用于在屏幕上打印出指定的字符串。 123echo arg echo -e arg #执行arg里的转义字符。echo加了-e默认会换行echo arg &gt; myfile #显示结果重定向至文件，会生成myfile文件 注意，echo后单引号和双引号作用是不同的。单引号不能转义里面的字符。双引号可有可无，单引号主要用在原样输出中。">
 <meta property="og:locale" content="zh_CN">
@@ -95,22 +95,22 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&text=shell 脚本编程之变量篇"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&is_video=false&description=shell 脚本编程之变量篇"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=shell 脚本编程之变量篇&body=Check out this article: https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&name=shell 脚本编程之变量篇&description=&lt;h2 id=&#34;打印-输入-输出&#34;&gt;&lt;a href=&#34;#打印-输入-输出&#34; class=&#34;headerlink&#34; title=&#34;打印/输入/输出&#34;&gt;&lt;/a&gt;打印/输入/输出&lt;/h2&gt;&lt;ul&gt;
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&text=shell 脚本编程之变量篇"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&is_video=false&description=shell 脚本编程之变量篇"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=shell 脚本编程之变量篇&body=Check out this article: http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&name=shell 脚本编程之变量篇&description=&lt;h2 id=&#34;打印-输入-输出&#34;&gt;&lt;a href=&#34;#打印-输入-输出&#34; class=&#34;headerlink&#34; title=&#34;打印/输入/输出&#34;&gt;&lt;/a&gt;打印/输入/输出&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;echo&lt;/strong&gt;： 是Shell的一个内部指令，用于在屏幕上打印出指定的字符串。&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;echo arg &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo -e arg #执行arg里的转义字符。echo加了-e默认会换行&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo arg &amp;gt; myfile #显示结果重定向至文件，会生成myfile文件&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;注意，echo后单引号和双引号作用是不同的。单引号不能转义里面的字符。双引号可有可无，单引号主要用在原样输出中。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&t=shell 脚本编程之变量篇"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&t=shell 脚本编程之变量篇"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -346,22 +346,22 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&text=shell 脚本编程之变量篇"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&is_video=false&description=shell 脚本编程之变量篇"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=shell 脚本编程之变量篇&body=Check out this article: https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&name=shell 脚本编程之变量篇&description=&lt;h2 id=&#34;打印-输入-输出&#34;&gt;&lt;a href=&#34;#打印-输入-输出&#34; class=&#34;headerlink&#34; title=&#34;打印/输入/输出&#34;&gt;&lt;/a&gt;打印/输入/输出&lt;/h2&gt;&lt;ul&gt;
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&text=shell 脚本编程之变量篇"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&is_video=false&description=shell 脚本编程之变量篇"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=shell 脚本编程之变量篇&body=Check out this article: http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&title=shell 脚本编程之变量篇"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&name=shell 脚本编程之变量篇&description=&lt;h2 id=&#34;打印-输入-输出&#34;&gt;&lt;a href=&#34;#打印-输入-输出&#34; class=&#34;headerlink&#34; title=&#34;打印/输入/输出&#34;&gt;&lt;/a&gt;打印/输入/输出&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;echo&lt;/strong&gt;： 是Shell的一个内部指令，用于在屏幕上打印出指定的字符串。&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;echo arg &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo -e arg #执行arg里的转义字符。echo加了-e默认会换行&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo arg &amp;gt; myfile #显示结果重定向至文件，会生成myfile文件&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;注意，echo后单引号和双引号作用是不同的。单引号不能转义里面的字符。双引号可有可无，单引号主要用在原样输出中。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&t=shell 脚本编程之变量篇"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/shell-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80.html&t=shell 脚本编程之变量篇"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>

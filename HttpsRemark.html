@@ -9,7 +9,7 @@
     <meta name="description" content="项目中登录请求采用了 RSA 加密算法，线上部署用的 https 协议。回去又翻了图解，总结一下。 Why Https ?Http的缺点大致总结如下 通信使用明文（不加密），内容可能会被窃听  不验证通信方的身份，因此有可能遭遇伪装  无法证明报文的完整性，所以有可能内容已遭篡改">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Https 相关总结">
-<meta property="og:url" content="https://zhangsong.site/HttpsRemark.html">
+<meta property="og:url" content="http://yoursite.com/HttpsRemark.html">
 <meta property="og:site_name" content="Jason Zhang">
 <meta property="og:description" content="项目中登录请求采用了 RSA 加密算法，线上部署用的 https 协议。回去又翻了图解，总结一下。 Why Https ?Http的缺点大致总结如下 通信使用明文（不加密），内容可能会被窃听  不验证通信方的身份，因此有可能遭遇伪装  无法证明报文的完整性，所以有可能内容已遭篡改">
 <meta property="og:locale" content="zh_CN">
@@ -98,23 +98,23 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/HttpsRemark.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/HttpsRemark.html&text=Https 相关总结"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/HttpsRemark.html&is_video=false&description=Https 相关总结"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Https 相关总结&body=Check out this article: https://zhangsong.site/HttpsRemark.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/HttpsRemark.html&name=Https 相关总结&description=&lt;p&gt;&lt;code&gt;项目中登录请求采用了 RSA 加密算法，线上部署用的 https 协议。回去又翻了图解，总结一下。&lt;/code&gt;&lt;/p&gt;
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/HttpsRemark.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/HttpsRemark.html&text=Https 相关总结"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/HttpsRemark.html&is_video=false&description=Https 相关总结"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Https 相关总结&body=Check out this article: http://yoursite.com/HttpsRemark.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/HttpsRemark.html&name=Https 相关总结&description=&lt;p&gt;&lt;code&gt;项目中登录请求采用了 RSA 加密算法，线上部署用的 https 协议。回去又翻了图解，总结一下。&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Why-Https&#34;&gt;&lt;a href=&#34;#Why-Https&#34; class=&#34;headerlink&#34; title=&#34;Why Https ?&#34;&gt;&lt;/a&gt;Why Https ?&lt;/h2&gt;&lt;h4 id=&#34;Http的缺点大致总结如下&#34;&gt;&lt;a href=&#34;#Http的缺点大致总结如下&#34; class=&#34;headerlink&#34; title=&#34;Http的缺点大致总结如下&#34;&gt;&lt;/a&gt;Http的缺点大致总结如下&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;#1-1&#34;&gt;通信使用明文（不加密），内容可能会被窃听&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;#1-2&#34;&gt;不验证通信方的身份，因此有可能遭遇伪装&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;#1-3&#34;&gt;无法证明报文的完整性，所以有可能内容已遭篡改&lt;/a&gt;&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/HttpsRemark.html&t=Https 相关总结"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/HttpsRemark.html&t=Https 相关总结"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -301,23 +301,23 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhangsong.site/HttpsRemark.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhangsong.site/HttpsRemark.html&text=Https 相关总结"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhangsong.site/HttpsRemark.html&is_video=false&description=Https 相关总结"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Https 相关总结&body=Check out this article: https://zhangsong.site/HttpsRemark.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhangsong.site/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhangsong.site/HttpsRemark.html&name=Https 相关总结&description=&lt;p&gt;&lt;code&gt;项目中登录请求采用了 RSA 加密算法，线上部署用的 https 协议。回去又翻了图解，总结一下。&lt;/code&gt;&lt;/p&gt;
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/HttpsRemark.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/HttpsRemark.html&text=Https 相关总结"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/HttpsRemark.html&is_video=false&description=Https 相关总结"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Https 相关总结&body=Check out this article: http://yoursite.com/HttpsRemark.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/HttpsRemark.html&title=Https 相关总结"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/HttpsRemark.html&name=Https 相关总结&description=&lt;p&gt;&lt;code&gt;项目中登录请求采用了 RSA 加密算法，线上部署用的 https 协议。回去又翻了图解，总结一下。&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Why-Https&#34;&gt;&lt;a href=&#34;#Why-Https&#34; class=&#34;headerlink&#34; title=&#34;Why Https ?&#34;&gt;&lt;/a&gt;Why Https ?&lt;/h2&gt;&lt;h4 id=&#34;Http的缺点大致总结如下&#34;&gt;&lt;a href=&#34;#Http的缺点大致总结如下&#34; class=&#34;headerlink&#34; title=&#34;Http的缺点大致总结如下&#34;&gt;&lt;/a&gt;Http的缺点大致总结如下&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;#1-1&#34;&gt;通信使用明文（不加密），内容可能会被窃听&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;#1-2&#34;&gt;不验证通信方的身份，因此有可能遭遇伪装&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;#1-3&#34;&gt;无法证明报文的完整性，所以有可能内容已遭篡改&lt;/a&gt;&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://zhangsong.site/HttpsRemark.html&t=Https 相关总结"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/HttpsRemark.html&t=Https 相关总结"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
